@@ -84,18 +84,6 @@ div.panel.show {
     display: block !important;
 }
 
-.top-logo{
-    position: relative;
-    margin: 0 auto;
-    height: 100px;
-}
-
-.top-half{
-    position: absolute;
-    top: -110px;
-    left: -150px;
-}
-
 .icon{
     display: none;
 }
@@ -111,7 +99,6 @@ hr{
     margin: 0 auto;
     color: hsl(240, 5%, 91%);
 }
-
 
 #buttom-half{
     background-image: url(https://svgshare.com/i/XiB.svg);
