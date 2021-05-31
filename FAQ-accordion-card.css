@@ -1,209 +1,218 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-body{
-    background-image: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    height: 125vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}  
+body {
+  background-image: linear-gradient(
+    180deg,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.wrapper{
-    height: 600px;
-    width: 325px;
+.wrapper {
+  height: 600px;
+  width: 325px;
 }
 
 .card {
-    background-color: white;
-    width: 325px;
-    height: 475px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    bottom: -110px;
+  background-color: white;
+  width: 325px;
+  height: 475px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: -110px;
 }
 
 h1 {
-    font-family: 'Kumbh Sans', sans-serif;
-    font-weight: 700;
-    text-align: center;
-    color: hsl(238, 29%, 16%);
-    padding: 15px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: hsl(238, 29%, 16%);
+  padding: 15px;
 }
 
 p {
-    font-family: 'Kumbh Sans', sans-serif;
-    font-weight: 400;
-    color: hsl(238, 29%, 16%);
-    font-size: 12px;
-
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  color: hsl(238, 29%, 16%);
+  font-size: 12px;
 }
 
 .accordion {
-    background-color: white;
-    color: #444;
-    cursor: pointer;
-    padding: 15px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
 }
 
-.panel{
-    padding: 15px;
+.panel {
+  padding: 15px;
 }
 
 .accordion:after {
-    content: url("https://svgshare.com/i/Xib.svg");
-    float: right;
-    margin-left: 5px;
-}
-  
-.active:after {
-    content: url("https://svgshare.com/i/Xib.svg");
-    float: right;
-    margin-left: 5px;
-    transform: rotate(180deg);
+  content: url("https://svgshare.com/i/Xib.svg");
+  float: right;
+  margin-left: 5px;
 }
 
-.active, .accordion:hover {
-    font-weight: 700;
+.active:after {
+  content: url("https://svgshare.com/i/Xib.svg");
+  float: right;
+  margin-left: 5px;
+  transform: rotate(180deg);
+}
+
+.active,
+.accordion:hover {
+  font-weight: 700;
 }
 
 div.panel {
-    display: none;
+  display: none;
 }
 
 div.panel.show {
-    display: block !important;
+  display: block !important;
 }
 
-.icon{
-    display: none;
+.icon {
+  display: none;
 }
 
-.buttom-half{
-    position: absolute;
-    left: -125px;
-    top: -5px;
+.buttom-half {
+  position: absolute;
+  left: -125px;
+  top: -5px;
 }
 
-hr{
-    width: 90%;
-    margin: 0 auto;
-    color: hsl(240, 5%, 91%);
+hr {
+  width: 90%;
+  margin: 0 auto;
+  color: hsl(240, 5%, 91%);
 }
 
-#buttom-half{
-    background-image: url(https://svgshare.com/i/XiB.svg);
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 0px;
-    left: -100px;
-    background-size: contain;
-    background-repeat: no-repeat;
-} 
+.top-logo{
+    /*border: 5px solid red;*/
+    width: 350px;
+    height: 100px;
+}
 
-#top-half{
-    background-image: url(https://svgshare.com/i/Xjb.svg);
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: -80px;
-    left: -110px;
-    background-size: contain;
-    background-repeat: no-repeat;
+#buttom-half {
+  background-image: url(https://svgshare.com/i/XiB.svg);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0px;
+  left: 64px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#top-half {
+  background-image: url(https://svgshare.com/i/Xjb.svg);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -80px;
+  left: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 600px) {
+  .wrapper {
+    height: 400px;
+    width: 700px;
+  }
 
-    .wrapper{
-        height: 400px;
-        width: 700px;
-    }
-    
-    .card {
-        background-color: white;
-        width: 700px;
-        height: 400px;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: row;
-        bottom: 0px;
-        align-items: center;
-    }
+  .card {
+    background-color: white;
+    width: 700px;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    bottom: 0px;
+    align-items: center;
+  }
 
-    .top-logo {
-        width: 100px;
-        height: 100px;
-        display: flex;
-        align-items: center;
-        border: 1px solid red;
-    }
+  .top-logo {
+    width: 350px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
 
-    .bottom-content{
-        width: 350px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 40px 40px 40px 0;
-    }
+  .bottom-content {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 40px 40px 0;
+  }
 
-    h1 {
-        text-align: left;
-    }
+  h1 {
+    text-align: left;
+  }
 
-    hr{
-        width: 95%;
-    }    
+  hr {
+    width: 95%;
+  }
 
-    .top-half{
-        position: absolute;
-        top: 0px;
-        left: 0px;
-    }
+  .top-half {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
 
-    .buttom-half{
-        position: absolute;
-        top: 0px;
-        left: 0px;
-    }
+  .buttom-half {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
 
-    #icon{
-        background-image: url(https://svgshare.com/i/XjS.svg);
-        position: absolute;
-        display: block;
-        top: 0px;
-        left: -270px;
-        width: 191px;
-        height: 184px;        
-    }
+  #icon {
+    background-image: url(https://svgshare.com/i/XjS.svg);
+    position: absolute;
+    display: block;
+    top: 90px;
+    left: -170px;
+    width: 191px;
+    height: 184px;
+  }
 
-    #buttom-half{
-        background-image: url(https://svgshare.com/i/XkD.svg);
-        position: absolute;
-        top: -150px;
-        left: -250px;
-        width: 472px;
-        height: 450px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    } 
+  #buttom-half {
+    background-image: url(https://svgshare.com/i/XkD.svg);
+    position: absolute;
+    top: -100px;
+    left: -150px;
+    width: 472px;
+    height: 450px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
-    #top-half{
-        background-image: url(https://svgshare.com/i/Xk7.svg);
-        position: absolute;
-        top: -130px;
-        left: -250px;
-        width: 472px;
-        height: 359px;
-    }  
+  #top-half {
+    background-image: url(https://svgshare.com/i/Xk7.svg);
+    position: absolute;
+    top: -50px;
+    left: -150px;
+    width: 472px;
+    height: 359px;
+  }
 }
+
   
