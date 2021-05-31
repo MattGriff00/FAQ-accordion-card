@@ -12,11 +12,20 @@ body{
     justify-content: center;
 }  
 
+.wrapper{
+    height: 600px;
+    width: 325px;
+}
+
 .card {
     background-color: white;
-    width: 500px;
-    height: 500px;
+    width: 325px;
+    height: 475px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: -110px;
 }
 
 h1 {
@@ -24,29 +33,35 @@ h1 {
     font-weight: 700;
     text-align: center;
     color: hsl(238, 29%, 16%);
+    padding: 10px;
 }
 
 p {
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 400;
     color: hsl(238, 29%, 16%);
+    font-size: 12px;
+
 }
 
 .accordion {
-    background-color: #eee;
+    background-color: white;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 15px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
 }
 
+.panel{
+    padding: 15px;
+}
+
 .active, .accordion:hover {
-    background-color: #ccc;
     font-weight: 700;
-  }
+}
 
 div.panel {
     display: none;
@@ -54,4 +69,28 @@ div.panel {
 
 div.panel.show {
     display: block !important;
+}
+
+.top-logo{
+    position: relative;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.top-half{
+    position: absolute;
+    top: -110px;
+    left: -150px;
+}
+
+.buttom-half{
+    position: absolute;
+    left: -125px;
+    top: -5px;
+}
+
+hr{
+    width: 90%;
+    margin: 0 auto;
+    color: hsl(240, 5%, 91%);
 }
